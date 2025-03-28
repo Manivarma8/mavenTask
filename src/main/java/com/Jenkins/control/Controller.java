@@ -12,4 +12,9 @@ public class Controller {
 	public String getLast(@PathVariable String name) {
 		return "The last letter of the name is " + name.charAt(name.length()-1);
 	}
+	
+	@GetMapping(value = "/put")
+	public int getAge(){
+		return 27;
+	}
 }
