@@ -17,4 +17,14 @@ public class Controller {
 	public int getAge(){
 		return 27;
 	}
+	
+	@GetMapping(value = "/booleanVal/{a}")
+	public boolean getValid(@PathVariable int a) {
+		if(a > 18) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
